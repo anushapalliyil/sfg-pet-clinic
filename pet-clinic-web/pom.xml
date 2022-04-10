@@ -104,7 +104,7 @@
                 <version>${wro4j.version}</version>
                 <executions>
                     <execution>
-                        <?m2e execute onConfiguration,onIncremental?>
+                        <?m2e ignore?>
                         <phase>generate-resources</phase>
                         <goals>
                             <goal>run</goal>

@@ -3,9 +3,9 @@ package anushapalliyil.springframework.sfgpetclinic.services.map;
 import java.util.Set;
 
 import anushapalliyil.springframework.sfgpetclinic.model.Owner;
-import anushapalliyil.springframework.sfgpetclinic.services.CrudService;
+import anushapalliyil.springframework.sfgpetclinic.services.OwnerService;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -26,5 +26,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }

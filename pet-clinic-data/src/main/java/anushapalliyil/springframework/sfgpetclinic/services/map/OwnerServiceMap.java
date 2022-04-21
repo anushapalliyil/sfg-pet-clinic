@@ -1,5 +1,6 @@
 package anushapalliyil.springframework.sfgpetclinic.services.map;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -37,6 +38,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 
     @Override
     public Owner findByLastName(String lastName) {
+        return null;
+    }
+    @Override
+    public List<Owner> findAllByLastNameLike(String string) {
         return null;
     }
 }

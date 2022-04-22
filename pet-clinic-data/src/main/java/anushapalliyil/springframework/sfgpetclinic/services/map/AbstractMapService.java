@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 import anushapalliyil.springframework.sfgpetclinic.model.BaseEntity;
+import anushapalliyil.springframework.sfgpetclinic.model.PetType;
 
 public abstract class AbstractMapService<T extends BaseEntity, ID> {
 
@@ -62,5 +63,9 @@ public abstract class AbstractMapService<T extends BaseEntity, ID> {
 
     public void setMap(Map<Long, T> map) {
         this.map = map;
+    }
+
+    public PetType save(PetType object) {
+        return null;
     }
 }

@@ -17,6 +17,9 @@ public abstract class AbstractMapService<T extends BaseEntity, ID> {
         this.map = map;
     }
 
+    public AbstractMapService() {
+    }
+
     Set<T> findAll(){
         return new HashSet<>(map.values());
     }

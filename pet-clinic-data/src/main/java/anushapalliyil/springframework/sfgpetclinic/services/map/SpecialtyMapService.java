@@ -5,10 +5,10 @@ import java.util.Set;
 import org.springframework.stereotype.Service;
 
 import anushapalliyil.springframework.sfgpetclinic.model.Speciality;
-import anushapalliyil.springframework.sfgpetclinic.services.SpecialtiesService;
+import anushapalliyil.springframework.sfgpetclinic.services.SpecialtyService;
 
 @Service
-public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialtiesService {
+public class SpecialtyMapService extends AbstractMapService<Speciality, Long> implements SpecialtyService {
 
     @Override
     public Set<Speciality> findAll() {
